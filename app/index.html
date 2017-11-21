@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inventory</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container"> 
+  <h1 id="page_id">Product List</h1>
+  <a id="ac_btn" href="accountInfo.html" class="btn btn-primary">Account Info</a>
+   <div class="table-responsive">
+    <table id = "all_emp_table" class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Unit Price</th>
+          <th>Available Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="products_rows">
+      </tbody>
+    </table>
+  </div>
+  <div class="container_buy">
+  <h1>Buy Product</h1>
+    <div id="msgBuy"></div>
+    <input type="text" id="product_id" placeholder="Enter Product ID"/>
+    <input type="text" id="product_quantity" placeholder="Enter Quantity"/>
+    <input type="text" id="address_" placeholder="Enter Address"/>
+    <input type="password" id="password_" placeholder="Enter Password"/>
+    <input type="text" id="timeOut_" placeholder="Enter Time out"/>
+    <br>
+    <a href="#" onclick="sellTheProduct()" class="btn btn-primary">Buy</a>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="app.js"></script>
+</html>
+
