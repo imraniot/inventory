@@ -13,6 +13,8 @@ This tutorial is meant for those with a basic knowledge of Ethereum and smart co
 
 ### Default config for truffle.js
 
+If you set-up your project on your local machine then **host: "127.0.0.1"** but you may have to change in production.
+
 ```
 module.exports = {
     networks: {
@@ -145,7 +147,7 @@ Install **NodeJS** (includes **NPM** 5.5.1) https://nodejs.org/en/download/
 
 ``geth --port 3500 --networkid 42 --nodiscover --datadir="datadir" --rpc --rpcport 8545 --rpcaddr 0.0.0.0 --rpccorsdomain "*" --rpcapi "eth,net,personal,web3"``
 
-## Attach to geth cosole:
+## Attach to geth console:
 
 ``geth attach ipc:\\.\pipe\geth.ipc`` **for windows** (Change it as per your ipc path, here I just used mine) OR
 
@@ -169,7 +171,7 @@ Install **NodeJS** (includes **NPM** 5.5.1) https://nodejs.org/en/download/
 
  eth.sendTransaction({from:eth.accounts[0], to:eth.accounts[1], value: web3.toWei(1.05, "ether")})
 
-5. Run the **liteserver** development server (outside the development console) for front-end hot reloading.
+5. Run the **liteserver** server (outside the development console) for front-end hot reloading.
 
     - Run the DAPP : ``npm run dev``
 
@@ -177,8 +179,7 @@ The DAPP will serve the front-end on http://localhost:3000
 
 # MetaMask
 
-MetaMask is a bridge that allows you to visit the distributed web of tomorrow in your browser today. It allows you to run Ethereum dApps right in your browse.You can also try with **MIST** or **Ethereum wallet** but MetaMask seems good to me that's why I just used **MetaMask**.
- The fastest way to connect is through Chrome and MetaMask as described below
+MetaMask is a bridge that allows you to visit the distributed web of tomorrow in your browser today. It allows you to run Ethereum dApps right in your browse.You can also try with **MIST** or **Ethereum wallet** but MetaMask seems good to me that's why I just used **MetaMask**. The fastest way to connect is through Chrome and MetaMask as described below
 
 https://www.dcorp.it/chrome_and_metamask
 
