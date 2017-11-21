@@ -1,6 +1,6 @@
 # Smart Block
 
-This tutorial is meant for those with a basic knowledge of Ethereum and smart contracts, who have some knowledge of HTML and JavaScript, but who are new to dapps.
+This tutorial is meant for those with a basic knowledge of Ethereum and smart contracts who have some knowledge of HTML, JavaScript and basic programming concepts but who are new to dapps.
 
 # What we'll do
 
@@ -147,13 +147,13 @@ Install **NodeJS** (includes **NPM** 5.5.1) https://nodejs.org/en/download/
 
 ## Attach to geth cosole:
 
-``geth attach ipc:\\.\pipe\geth.ipc`` **Change it as per your ipc path, here I just used mine** OR
+``geth attach ipc:\\.\pipe\geth.ipc`` **for windows** (Change it as per your ipc path, here I just used mine) OR
 
-``geth attach ipc:geth attach ipc:/var/www/html/ethshop/geth/datadir/geth.ipc`` **for ubuntu**
+``geth attach ipc:/var/www/html/ethshop/geth/datadir/geth.ipc`` **for ubuntu**
 
-## Example Commands:
+## Example Commands on geth console:
 
- personal.newAccount("123456789")
+ personal.newAccount("123456789") 
 
  personal.newAccount("987654321")
 
@@ -177,7 +177,8 @@ The DAPP will serve the front-end on http://localhost:3000
 
 # MetaMask
 
-MetaMask is a bridge that allows you to visit the distributed web of tomorrow in your browser today. It allows you to run Ethereum dApps right in your browse. The fastest way to connect is through Chrome and MetaMask as described below.
+MetaMask is a bridge that allows you to visit the distributed web of tomorrow in your browser today. It allows you to run Ethereum dApps right in your browse.You can also try with **MIST** or **Ethereum wallet** but MetaMask seems good to me that's why I just used **MetaMask**.
+ The fastest way to connect is through Chrome and MetaMask as described below
 
 https://www.dcorp.it/chrome_and_metamask
 
